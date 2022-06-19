@@ -23,6 +23,7 @@
 		6BA33C34285F041E009B261E /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA33C33285F041E009B261E /* CollectionViewController.swift */; };
 		6BA33C36285F0476009B261E /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA33C35285F0476009B261E /* CollectionViewCell.swift */; };
 		6BA33C38285F0EB8009B261E /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA33C37285F0EB8009B261E /* CustomImageView.swift */; };
+		6BA33C3D285F15C7009B261E /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA33C3C285F15C7009B261E /* TableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		6BA33C33285F041E009B261E /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		6BA33C35285F0476009B261E /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		6BA33C37285F0EB8009B261E /* CustomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
+		6BA33C3C285F15C7009B261E /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,9 +115,10 @@
 		6BA33BE42859640B009B261E /* HelloiOS */ = {
 			isa = PBXGroup;
 			children = (
+				6BA33C18285EBD74009B261E /* Collection */,
+				6BA33C39285F1520009B261E /* Table */,
 				6BA33C2F285EFF3A009B261E /* Main.storyboard */,
 				6BA33C22285EC9AA009B261E /* Network */,
-				6BA33C18285EBD74009B261E /* Collection */,
 				6BA33BE52859640B009B261E /* AppDelegate.swift */,
 				6BA33BE72859640B009B261E /* SceneDelegate.swift */,
 				6BA33BE92859640B009B261E /* ViewController.swift */,
@@ -162,6 +165,14 @@
 				6BA33C23285EC9E3009B261E /* CollectionRepo.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		6BA33C39285F1520009B261E /* Table */ = {
+			isa = PBXGroup;
+			children = (
+				6BA33C3C285F15C7009B261E /* TableViewController.swift */,
+			);
+			path = Table;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -301,6 +312,7 @@
 				6BA33BEA2859640B009B261E /* ViewController.swift in Sources */,
 				6BA33C24285EC9E3009B261E /* CollectionRepo.swift in Sources */,
 				6BA33C34285F041E009B261E /* CollectionViewController.swift in Sources */,
+				6BA33C3D285F15C7009B261E /* TableViewController.swift in Sources */,
 				6BA33BE62859640B009B261E /* AppDelegate.swift in Sources */,
 				6BA33BE82859640B009B261E /* SceneDelegate.swift in Sources */,
 				6BA33C26285ED9DC009B261E /* Animal.swift in Sources */,
