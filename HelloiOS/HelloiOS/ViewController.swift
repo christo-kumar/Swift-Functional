@@ -11,7 +11,7 @@ class ViewController: UIViewController {
     
     @IBOutlet var tableView: UITableView!
     
-    let rowData = ["Collect View", "Table View", "Custom Navigation", "Search Controller", "Scroll View","POP","Core Data", "Realm"
+    let rowData = ["Collect View", "Practice Table View", "Lazy Table", "Custom Navigation", "Search Controller", "Scroll View","POP","Core Data", "Realm"
     ]
 
     func setupView() {

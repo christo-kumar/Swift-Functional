@@ -1,5 +1,5 @@
 //
-//  TableViewController.swift
+//  TBViewController.swift
 //  HelloiOS
 //
 //  Created by Christo Kumar on 19/06/22.
@@ -7,13 +7,12 @@
 
 import UIKit
 
-class TableViewController: UIViewController {
+class TBViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.tableView.delegate = self
-        self.tableView.dataSource = self
-        self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+
         // Do any additional setup after loading the view.
     }
     
@@ -30,14 +29,20 @@ class TableViewController: UIViewController {
 
 }
 
-extension TableViewController: UITableViewDelegate, UITableViewDataSource {
+extension TBViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        10
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        cell.textLabel?.text = "Hello"
+        let cell = tableView.dequeueReusableCell(withIdentifier: "TableViewCellID", for: indexPath) as! TableViewCell
+        cell.customImageView.image = UIImage(named: "CheckMark")
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 50
+    }
+    
+    
 }
