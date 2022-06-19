@@ -40,10 +40,17 @@ extension ViewController: UITableViewDataSource {
     }
     
     
+    
+    
 }
 
 extension ViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if indexPath.row == 0 {
+            self.performSegue(withIdentifier: "collectionSegue", sender: indexPath)
+        } else if indexPath.row == 1 {
+            self.performSegue(withIdentifier: "tableSegue", sender: indexPath)
+        }
         
     }
     
