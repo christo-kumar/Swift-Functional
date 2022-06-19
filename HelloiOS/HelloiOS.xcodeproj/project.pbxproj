@@ -17,6 +17,9 @@
 		6BA33C002859640D009B261E /* HelloiOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA33BFF2859640D009B261E /* HelloiOSTests.swift */; };
 		6BA33C0A2859640D009B261E /* HelloiOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA33C092859640D009B261E /* HelloiOSUITests.swift */; };
 		6BA33C0C2859640D009B261E /* HelloiOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA33C0B2859640D009B261E /* HelloiOSUITestsLaunchTests.swift */; };
+		6BA33C1A285EBE0B009B261E /* CollectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA33C19285EBE0B009B261E /* CollectViewController.swift */; };
+		6BA33C1C285EC496009B261E /* CollectCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA33C1B285EC496009B261E /* CollectCell.swift */; };
+		6BA33C1E285EC53C009B261E /* CustImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA33C1D285EC53C009B261E /* CustImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		6BA33C052859640D009B261E /* HelloiOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelloiOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BA33C092859640D009B261E /* HelloiOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloiOSUITests.swift; sourceTree = "<group>"; };
 		6BA33C0B2859640D009B261E /* HelloiOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloiOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		6BA33C19285EBE0B009B261E /* CollectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectViewController.swift; sourceTree = "<group>"; };
+		6BA33C1B285EC496009B261E /* CollectCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectCell.swift; sourceTree = "<group>"; };
+		6BA33C1D285EC53C009B261E /* CustImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +107,7 @@
 		6BA33BE42859640B009B261E /* HelloiOS */ = {
 			isa = PBXGroup;
 			children = (
+				6BA33C18285EBD74009B261E /* Collection */,
 				6BA33BE52859640B009B261E /* AppDelegate.swift */,
 				6BA33BE72859640B009B261E /* SceneDelegate.swift */,
 				6BA33BE92859640B009B261E /* ViewController.swift */,
@@ -128,6 +135,16 @@
 				6BA33C0B2859640D009B261E /* HelloiOSUITestsLaunchTests.swift */,
 			);
 			path = HelloiOSUITests;
+			sourceTree = "<group>";
+		};
+		6BA33C18285EBD74009B261E /* Collection */ = {
+			isa = PBXGroup;
+			children = (
+				6BA33C19285EBE0B009B261E /* CollectViewController.swift */,
+				6BA33C1B285EC496009B261E /* CollectCell.swift */,
+				6BA33C1D285EC53C009B261E /* CustImageView.swift */,
+			);
+			path = Collection;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,8 +279,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				6BA33BF02859640B009B261E /* HelloiOS.xcdatamodeld in Sources */,
+				6BA33C1E285EC53C009B261E /* CustImageView.swift in Sources */,
+				6BA33C1A285EBE0B009B261E /* CollectViewController.swift in Sources */,
 				6BA33BEA2859640B009B261E /* ViewController.swift in Sources */,
 				6BA33BE62859640B009B261E /* AppDelegate.swift in Sources */,
+				6BA33C1C285EC496009B261E /* CollectCell.swift in Sources */,
 				6BA33BE82859640B009B261E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

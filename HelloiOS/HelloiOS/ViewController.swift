@@ -16,6 +16,7 @@ class ViewController: UIViewController {
 
     func setupView() {
         navigationItem.title = "iOS Controls"
+        navigationController?.navigationBar.tintColor = UIColor.darkGray
         self.tableView.dataSource = self
         self.tableView.delegate = self
         self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
