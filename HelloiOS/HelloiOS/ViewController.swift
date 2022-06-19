@@ -51,6 +51,8 @@ extension ViewController: UITableViewDelegate {
             self.performSegue(withIdentifier: "collectionSegue", sender: indexPath)
         } else if indexPath.row == 1 {
             self.performSegue(withIdentifier: "tableSegue", sender: indexPath)
+        } else if indexPath.row == 2 {
+            self.performSegue(withIdentifier: "lazyTableSegue", sender: indexPath)
         }
         
     }
