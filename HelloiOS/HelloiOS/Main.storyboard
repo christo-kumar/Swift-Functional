@@ -41,7 +41,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="922" y="70"/>
+            <point key="canvasLocation" x="914" y="80"/>
         </scene>
         <!--Collection View Controller-->
         <scene sceneID="n0a-UN-AVr">
@@ -214,7 +214,7 @@
                             <constraint firstItem="GqA-UA-bLG" firstAttribute="trailing" secondItem="LTa-dg-Apk" secondAttribute="trailing" id="QuK-E5-mSe"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="aXJ-Sg-Fnx"/>
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="always" id="aXJ-Sg-Fnx"/>
                     <connections>
                         <outlet property="tableView" destination="LTa-dg-Apk" id="R3T-Fy-53I"/>
                     </connections>

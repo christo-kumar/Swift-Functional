@@ -7,12 +7,25 @@
 
 import UIKit
 
+class ResultController : UIViewController {
+    override func viewDidLoad() {
+    }
+}
+
 class TBViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
+    func setupSearchBar() {
+        //let resultController = ResultController()
+        let searchController = UISearchController()
+        searchController.searchResultsUpdater = self
+        navigationItem.searchController = searchController
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.setupSearchBar()
         // Do any additional setup after loading the view.
     }
     
@@ -27,6 +40,24 @@ class TBViewController: UIViewController {
     }
     */
 
+}
+
+extension TBViewController: UISearchResultsUpdating {
+    func updateSearchResults(for searchController: UISearchController) {
+        let someArray = ["Mumbai","Calcutta"]
+        guard let searchText = searchController.searchBar.text else {
+            return
+        }
+        if searchText == "" {
+            
+        } else {
+            let filter = someArray.filter { val in
+                return val.contains(searchText)
+            }
+            print(filter)
+        }
+        
+    }
 }
 
 extension TBViewController: UITableViewDelegate, UITableViewDataSource {
