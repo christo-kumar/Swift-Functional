@@ -8,7 +8,21 @@
 import UIKit
 
 class NavViewController: UIViewController {
+    
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        if #available(iOS 13.0, *) {
+                let appearance = UINavigationBarAppearance()
+                appearance.configureWithDefaultBackground()
+            appearance.backgroundColor = UIColor.clear
 
+                navigationController?.navigationBar.standardAppearance = appearance
+                navigationController?.navigationBar.scrollEdgeAppearance = appearance
+            } else {
+                // Fallback on earlier versions
+                navigationController?.navigationBar.barTintColor = UIColor.clear
+            }
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.title = "test"
@@ -42,6 +56,11 @@ class NavViewController: UIViewController {
             }
 
         // Do any additional setup after loading the view.
+    }
+    
+    
+    
+    deinit {
     }
 
 
