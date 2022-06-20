@@ -11,6 +11,7 @@ class NavViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.title = "test"
         //Setting up the title image
         let image = UIImage(named: "CheckMark")
         let imageView = UIImageView(image: image)
@@ -26,7 +27,19 @@ class NavViewController: UIViewController {
         customView.addSubview(someButton)
         navigationItem.rightBarButtonItem = UIBarButtonItem(customView: customView)
         
-        
+         // solid color
+        //navigationController?.navigationBar.barTintColor = UIColor.green
+        if #available(iOS 13.0, *) {
+                let appearance = UINavigationBarAppearance()
+                appearance.configureWithDefaultBackground()
+                appearance.backgroundColor = UIColor.green
+
+                navigationController?.navigationBar.standardAppearance = appearance
+                navigationController?.navigationBar.scrollEdgeAppearance = appearance
+            } else {
+                // Fallback on earlier versions
+                navigationController?.navigationBar.barTintColor = UIColor.green
+            }
 
         // Do any additional setup after loading the view.
     }
