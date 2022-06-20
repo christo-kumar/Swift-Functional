@@ -8,19 +8,19 @@
 import UIKit
 
 class LazyViewController: UIViewController {
+    
     @IBOutlet weak var tableView: UITableView!
-    let viewModel = CollectViewModel()
+    let netRepo = NetRepo()
     var animals:[Animal] = []
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        viewModel.getImages { [weak self] result in
+    func getData() {
+        Task.init() {
+            let result = await netRepo.getPosts()
             switch result {
-                
-            case .success(let animalres):
-                self?.animals = animalres.animals
+            case .success(let animalRes):
+                self.animals = animalRes.animals
                 DispatchQueue.main.async {
-                    self?.tableView.reloadData()
+                    self.tableView.reloadData()
                 }
                 break
             case .failure(let error):
@@ -28,8 +28,12 @@ class LazyViewController: UIViewController {
                 break
             }
         }
-
+    }
+    
+    override func viewDidLoad()  {
         // Do any additional setup after loading the view.
+        super.viewDidLoad()
+        getData()
     }
     
 
