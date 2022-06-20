@@ -46,6 +46,15 @@ extension ViewController: UITableViewDataSource {
 }
 
 extension ViewController: UITableViewDelegate {
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        /*var newProgramVar = Program(category: "Some", name: "Text")
+
+            // Create a new variable to store the instance of PlayerTableViewController
+            let destinationVC = segue.destinationViewController as PlayerTableViewController
+            destinationVC.programVar = newProgramVar*/
+    }
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if indexPath.row == 0 {
             self.performSegue(withIdentifier: "collectionSegue", sender: indexPath)
@@ -53,6 +62,9 @@ extension ViewController: UITableViewDelegate {
             self.performSegue(withIdentifier: "tableSegue", sender: indexPath)
         } else if indexPath.row == 2 {
             self.performSegue(withIdentifier: "lazyTableSegue", sender: indexPath)
+        } else if indexPath.row == 3 {
+            let dVC = NavViewController.init(nibName: "NavViewController", bundle: Bundle.main)
+            self.navigationController?.pushViewController(dVC, animated: true)
         }
         
     }

@@ -28,6 +28,8 @@
 		6BA33C48285F21FE009B261E /* LazyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA33C47285F21FE009B261E /* LazyViewController.swift */; };
 		6BA33C4A285F232D009B261E /* LazyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA33C49285F232D009B261E /* LazyTableViewCell.swift */; };
 		6BA33C4C285F2468009B261E /* LazyImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA33C4B285F2468009B261E /* LazyImageView.swift */; };
+		6BA33C50286003C5009B261E /* NavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA33C4E286003C5009B261E /* NavViewController.swift */; };
+		6BA33C51286003C5009B261E /* NavViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6BA33C4F286003C5009B261E /* NavViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +75,8 @@
 		6BA33C47285F21FE009B261E /* LazyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyViewController.swift; sourceTree = "<group>"; };
 		6BA33C49285F232D009B261E /* LazyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyTableViewCell.swift; sourceTree = "<group>"; };
 		6BA33C4B285F2468009B261E /* LazyImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyImageView.swift; sourceTree = "<group>"; };
+		6BA33C4E286003C5009B261E /* NavViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavViewController.swift; sourceTree = "<group>"; };
+		6BA33C4F286003C5009B261E /* NavViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NavViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +127,7 @@
 		6BA33BE42859640B009B261E /* HelloiOS */ = {
 			isa = PBXGroup;
 			children = (
+				6BA33C4D286003A2009B261E /* Navigation */,
 				6BA33C46285F21CC009B261E /* LazyTable */,
 				6BA33C18285EBD74009B261E /* Collection */,
 				6BA33C39285F1520009B261E /* Table */,
@@ -193,6 +198,15 @@
 				6BA33C4B285F2468009B261E /* LazyImageView.swift */,
 			);
 			path = LazyTable;
+			sourceTree = "<group>";
+		};
+		6BA33C4D286003A2009B261E /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				6BA33C4E286003C5009B261E /* NavViewController.swift */,
+				6BA33C4F286003C5009B261E /* NavViewController.xib */,
+			);
+			path = Navigation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -301,6 +315,7 @@
 			files = (
 				6BA33C30285EFF3B009B261E /* Main.storyboard in Resources */,
 				6BA33BF52859640D009B261E /* LaunchScreen.storyboard in Resources */,
+				6BA33C51286003C5009B261E /* NavViewController.xib in Resources */,
 				6BA33BF22859640D009B261E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -332,6 +347,7 @@
 				6BA33C4C285F2468009B261E /* LazyImageView.swift in Sources */,
 				6BA33BEA2859640B009B261E /* ViewController.swift in Sources */,
 				6BA33C24285EC9E3009B261E /* CollectionRepo.swift in Sources */,
+				6BA33C50286003C5009B261E /* NavViewController.swift in Sources */,
 				6BA33C34285F041E009B261E /* CollectionViewController.swift in Sources */,
 				6BA33BE62859640B009B261E /* AppDelegate.swift in Sources */,
 				6BA33C4A285F232D009B261E /* LazyTableViewCell.swift in Sources */,
